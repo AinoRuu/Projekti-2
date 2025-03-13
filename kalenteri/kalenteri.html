@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalenteri</title>
+    <link rel="stylesheet" href="../kalenteri/kalenteri.css">
+    <link rel="stylesheet" href="../etusivu/style.css">
+    <script src="../etusivu/main.js"></script>
+    <script src="../kirjautuminen/login.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* a wrapper div around the main content and flexbox styles to ensure the footer stays at the bottom of the page */
+        .content-wrapper {
+            flex: 1;
+        }
+        footer {
+            background-color: #5c9475;
+            padding: 40px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            padding-bottom: 80px;
+            margin-top: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- Navigointi-->
+        <div class="logo">
+            <p>Linkkikotiin</p>
+        </div>
+        <ul>
+            <li> <a href="../etusivu/getStarted.html">Etusivu</a></li>
+            <li> <a href="../hakusivut/perhekotihaku.html">Perhekodit</a></li>
+            <li> <a href="../hakusivut/hoitajahaku.html">Hoitajat</a></li>
+            <li> <a href="../kalenteri/kalenteri.html">Kalenteri</a></li>
+            <button id="kirjaudu1"><a href="../kirjautuminen/login.html">Kirjaudu</a></button>
+            <!--Tämä muutttuu "Kirjaudu ulos (username) kirjautuneille-->
+
+        </ul>
+    </nav>
+    <!-- a wrapper div around the main content and flexbox styles to ensure the footer stays at the bottom of the page -->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="header" style="margin-top: 200px;"> <!-- etäisyys navbarista-->
+                <form action="/action_page.php">
+                    <input type="text" id="searchInput" placeholder="Hae tapahtumia...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <select id="filterInput">
+                    <option value="">Kaikki</option>
+                    <option value="vapaa">Vapaa</option>
+                    <option value="varattu">Varattu</option>
+                    <option value="vapautumassa">Vapautumassa</option>
+                </select>
+                <button id="addEventButton">Lisää tapahtuma</button>
+            </div>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prevMonth">Edellinen</button>
+                    <div id="currentMonth"></div>
+                    <button id="nextMonth">Seuraava</button>
+                </div>
+                <div class="calendar-weekdays">
+                    <div>Maanantai</div>
+                    <div>Tiistai</div>
+                    <div>Keskiviikko</div>
+                    <div>Torstai</div>
+                    <div>Perjantai</div>
+                    <div>Lauantai</div>
+                    <div>Sunnuntai</div>
+                </div>
+                <div class="calendar-days" id="calendarDays"></div>
+            </div>
+            <div class="modal" id="eventModal">
+                <div class="modal-content">
+                    <h2>Lisää tapahtuma</h2>
+                    <input type="text" id="eventTitle" placeholder="Tapahtuma" required>
+                    <input type="time" id="eventTimeStart" placeholder="Aloitusaika" required>
+                    <input type="time" id="eventTimeEnd" placeholder="Lopetusaika" required>
+                    <textarea id="eventDetails" placeholder="Lisätiedot"></textarea>
+                    <select id="eventStatus">
+                        <option value="vapaa">Vapaa</option>
+                        <option value="varattu">Varattu</option>
+                        <option value="vapautumassa">Vapautumassa</option>
+                    </select>
+                    <button id="saveEventButton">Tallenna</button>
+                    <button id="deleteEventButton">Poista</button>
+                    <button id="cancelEventButton">Peruuta</button>
+                </div>
+            </div>
+            <div id="eventList"></div>
+        </div>
+    </div><br><br>
+    <footer>Linkkikotiin.fi</footer>
+    <script src="../kalenteri/kalenteri.js"></script>
+    <script src="../etusivu/main.js"></script>
+</body>
+
+</html>

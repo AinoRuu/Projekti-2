@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.header select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5c9475;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.header button:hover {
+    background-color: #2A4A45;
+}
+.calendar {
+    background-color: #D9D9D9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/*Kuukausi*/
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.calendar-header button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #5c9475;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.calendar-header button:hover {
+    background-color: #2A4A45;
+}
+/*Viikonpäivät*/
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.day {
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.day:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+}
+.day.selected {
+    background-color: #2185d0;
+    color: white;
+}
+
+/*Tapahtuma*/
+.event {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f0f8ff;
+    border-left: 4px solid #2185d0;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: left;
+    cursor: pointer;
+}
+.event.vapaa {
+    background: #4caf50;
+    color: white;
+}
+.event.varattu {
+    background: #f44336;
+    color: white;
+}
+.event.vapautumassa {
+    background: #ff9800;
+    color: white;
+}
+
+/*Tapahtuman lisäys ja muokkaus modaali*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+}
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.modal-content h2 {
+    margin-top: 0;
+}
+.modal-content input, .modal-content textarea, .modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #2185d0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.modal-content button:hover {
+    background-color: #1a6cb3;
+}
+.modal-content button#deleteEventButton {
+    background-color: #f44336;
+}
+.modal-content button#deleteEventButton:hover {
+    background-color: #d32f2f;
+}
+#eventList {
+    margin-top: 20px;
+}
+#eventList .event {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*suodattimet*/
+#eventList .event.vapaa {
+    background-color: #4caf50;
+    color: white;
+}
+#eventList .event.varattu {
+    background-color: #f44336;
+    color: white;
+}
+#eventList .event.vapautumassa {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .calendar-header {
+        flex-direction: column;
+    }
+
+    .calendar-weekdays, .calendar-days {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .day {
+        padding: 15px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header input, .header select, .header button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-weekdays, .calendar-days {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .day {
+        padding: 10px;
+    }
+
+    .header input, .header select, .header button {
+        font-size: 14px;
+    }
+}

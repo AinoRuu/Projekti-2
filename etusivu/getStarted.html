@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get started</title>
+    <link rel="stylesheet" href="../etusivu/style.css">
+</head>
+
+<body>
+
+    <!-- Ei-kirjautunut-modaali -->
+    <div id="loginModal" class="not_logged_modal">
+        <div class="modal-content">
+            <span class="close">&times;</span><br><br>
+            <p>Kirjaudu sisään käyttääksesi tätä ominaisuutta.</p>
+            <button onclick="window.location.href='../kirjautuminen/login.html'">Kirjaudu</button>
+        </div>
+    </div>
+
+    <nav>
+        <!-- Navigointi-->
+        <div class="logo">
+            <p>Linkkikotiin</p>
+        </div>
+        <ul>
+            <li> <a href="../etusivu/getStarted.html">Etusivu</a></li>
+            <li> <a href="../hakusivut/perhekotihaku.html">Perhekodit</a></li>
+            <li> <a href="../hakusivut/hoitajahaku.html">Hoitajat</a></li>
+            <li> <a href="../kalenteri/kalenteri.html">Kalenteri</a></li>
+            <li> <a href="../hoitajaprofiili/nurse.html">Oma Profiili</a></li>
+            <button id="kirjaudu1"><a href="../kirjautuminen/login.html">Kirjaudu</a></button> <!--Tämä muutttuu "Kirjaudu ulos (username) kirjautuneille-->
+
+        </ul>
+    </nav>
+
+    <!-- a wrapper div around the main content and flexbox styles to ensure the footer stays at the bottom of the page -->
+    <div class="content-wrapper">
+        <div class="content-items">
+            <!-- ISO KUVA-->
+            <img src="https://images.unsplash.com/photo-1543333995-a78aea2eee50?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Kuva">
+        </div>
+
+        <div class="flex-container">
+            <div class="box-1">
+                <h1>LINKKI KOTIIN</h1><br>
+                <p>Ikäihmisten perhehoidon asiakasohjauksen tehostamiseksi.</p><br>
+                <p>Kaikki tarvittava tieto ikäihmisten perhehoidosta yhdessä paikassa – sujuvampaa asiakasohjausta ja parempia hoitoratkaisuja.</p>
+            </div>
+
+            <div class="box-2">
+                <p>Meidän tarkoituksena on tehostaa ikäihmisten perhehoidon asiakasohjausta sekä vähentää tyhjien perhehoitopäivien määrää.</p><br>
+                <p>Haluamme varmistaa, että ikäihmiset löytävät oikeanlaisen perhehoitopaikan sujuvasti.</p>
+            </div>
+        </div>
+
+        <div class="flex-container" style="background-color: #5c9475;">
+            <div class="box-3">
+                <!-- Keskikokoinen KUVA -->
+                <img src="https://images.unsplash.com/photo-1543333995-a78aea2eee50?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Kuva">
+            </div>
+
+            <div class="box-4">
+                <h1>Perhehoidosta</h1><br>
+                <p>Yleistä tietoa perhekodeista ja hoidosta mitä se on, kenelle sopii </p>
+                    <p>Perhehoito tarjoaa kodinomaista ja yksilöllistä hoivaa ikäihmisille. Hoito voi tapahtua joko perhehoitajan kodissa (perhekoti) tai ikäihmisen omassa kodissa perhehoitajan tukemana (kiertävä perhehoito).</p><br>
+                    <p>Perhehoidon vaihtoehdot:</p><br>
+                    <ul>
+                        <li><b>Pitkäaikainen perhehoito</b> – jatkuvaa ja vakituista asumista perhekodissa</li><br>
+                        <li><b>Lyhytaikainen perhehoito</b> - esimerkiksi 3 vuorokautta kuukaudessa</li>
+                        <li><b>Osavuorokautinen perhehoito</b> – esimerkiksi 8 tuntia päivässä</li>
+                    </ul>
+                    <br>
+                    <p>Ennen hoidon alkamista järjestetään tutustumiskäynti ja -jakso, jotta sekä perhehoitaja että hoidettava voivat varmistua sopivuudesta.</p>
+            </div>
+        </div>
+
+        <!-- Tutustu hoitajiin ja perhekoteihin -->
+        <div class="flex-container">
+            <div class="box-5">
+                <h2>Tutustu perhekoteihin</h2><br>
+                <p>Täältä näet kaikki perhekodit</p>
+                <a href="../hakusivut/perhekotihaku.html"><button>Perhekodit →</button></a>
+            </div>
+            <div class="box-6">
+                <h2>Tutustu hoitajiin</h2><br>
+                <p>Täältä näet kaikki hoitajat</p>
+                <a href="../hakusivut/hoitajahaku.html"><button>Hoitajat →</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>Linkkikotiin.fi</footer>
+    <script src="../etusivu/main.js"></script>
+    <script src="../kirjautuminen/login.js"></script>
+</body>
+
+</html>

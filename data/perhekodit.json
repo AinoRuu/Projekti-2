@@ -1,0 +1,193 @@
+[
+  {
+    "Id": 1,
+    "nimi": "Perhekoti Kuopio",
+    "sijainti": "Kuopio",
+    "osoite": "Kuopiontie 1",
+    "esteeton": true,
+    "elaimet": true,
+    "lapset": true,
+    "kotisairaanhoito": false,
+    "perhekoti_kuva_link": "https://www.perhekotilyhty.fi/uploads/1/2/9/9/129920582/web-2_orig.jpg",
+    "vapaat_paikat": 3,
+    "kaikki_paikat": 5,
+    "henkilot": [
+      {
+        "henkilo_id": 1,
+        "henkilo_varattu": {
+          "alkupvm": "2023-04-15",
+          "loppupvm": "2024-04-15"
+        }
+      },
+      {
+        "henkilo_id": 2,
+        "henkilo_varattu": {
+          "alkupvm": "2023-07-15",
+          "loppupvm": "2024-09-15"
+        }
+      }
+    ],
+    "yleisselitys": "Perhekoti A on Kuopiossa sijaitseva esteetön perhekoti, jossa on eläimiä ja lapsia. Kotisairaanhoitoa ei ole saatavilla."
+  },
+  {
+    "Id": 2,
+    "nimi": "Perhekoti Siili",
+    "sijainti": "Siilinjärvi",
+    "osoite": "Siilinjärventie 5",
+    "esteeton": false,
+    "elaimet": false,
+    "lapset": true,
+    "kotisairaanhoito": true,
+    "perhekoti_kuva_link": "//www.kreivitalo.fi/layout/kuvat/kreivitalo-talomallit-nordland.jpg",
+    "vapaat_paikat": 7,
+    "kaikki_paikat": 9,
+    "henkilot": [
+      {
+        "henkilo_id": 3,
+        "henkilo1_varattu": {
+          "alkupvm": "2023-09-01",
+          "loppupvm": "2024-12-01"
+        }
+        },
+      {
+        "henkilo_id": 4,
+        "henkilo2_varattu": {
+          "alkupvm": "2023-05-01",
+          "loppupvm": "2024-11-01"
+        }
+        
+      }
+    ],
+    "yleisselitys": "Perhekoti Siili on Siilinjärvellä sijaitseva koti, jossa on kotisairaanhoito saatavilla ja kodissa on lapsia, mutta ei eläimiä."
+  },
+  {
+    "Id": 3,
+    "nimi": "Perhekoti Varjo",
+    "sijainti": "Varkaus",
+    "osoite": "Varkaudentie 22",
+    "esteeton": true,
+    "elaimet": false,
+    "lapset": false,
+    "kotisairaanhoito": true,
+    "perhekoti_kuva_link": "https://www.perhekotiotto-onni.fi/files/whatsapp-image-2024-01-18-at-16-35-24-500x0-c-default.jpeg",
+    "vapaat_paikat": 0,
+    "kaikki_paikat": 2,
+    "henkilot": [
+      {
+        "henkilo_id": 5,
+        "henkilo1_varattu": {
+          "alkupvm": "2024-01-10",
+          "loppupvm": "2025-01-10"
+        }
+      },
+      {
+        "henkilo_id": 6,
+        "henkilo1_varattu": {
+          "alkupvm": "2023-06-20",
+          "loppupvm": "2024-06-20"
+        }
+      }
+    ],
+    "yleisselitys": "Perhekoti Varjo on Varkaudessa sijaitseva esteetön koti, jossa on kotisairaanhoito, ja kodissa ei ole eläimiä tai lapsia."
+  },
+  {
+    "Id": 4,
+    "nimi": "Perhekoti Outi",
+    "sijainti": "Kiuruvesi",
+    "osoite": "Kiuruvedentie 1",
+    "esteeton": false,
+    "elaimet": true,
+    "lapset": false,
+    "kotisairaanhoito": false,
+    "perhekoti_kuva_link": "https://www.nuortenmummola.fi/wp-content/uploads/Kuva-2_1500px-1030x687.jpg",
+    "vapaat_paikat": 6,
+    "kaikki_paikat": 6,
+    "henkilot": [],
+    "yleisselitys": "Perhekoti Outi on Kiuruvedellä sijaitseva koti, jossa ei ole esteettömyyttä tai kotisairaanhoitoa. Kodissa on eläimiä, mutta ei lapsia."
+  },
+
+  {
+    "Id": 5,
+    "nimi": "Perhekoti Joressa",
+    "sijainti": "Joroinen",
+    "osoite": "Joroistentie 7",
+    "esteeton": false,
+    "elaimet": true,
+    "lapset": false,
+    "kotisairaanhoito": false,
+    "perhekoti_kuva_link": "https://a0.muscache.com/im/pictures/miso/Hosting-924092990893597541/original/03ffc890-f13a-4c1b-a012-6894ef55f710.jpeg?im_w=720",
+    "vapaat_paikat": 6,
+    "kaikki_paikat": 6,
+    "henkilot": [],
+    "yleisselitys": "Perhekoti Joressa on Joroisissa sijaitseva koti, jossa ei ole esteettömyyttä tai kotisairaanhoitoa. Kodissa on eläimiä, mutta ei lapsia."
+  },
+
+  {
+    "Id": 6,
+    "nimi": "Perhekoti Fanni",
+    "sijainti": "Joroinen",
+    "osoite": "Vesannontie 33",
+    "esteeton": false,
+    "elaimet": true,
+    "lapset": false,
+    "kotisairaanhoito": false,
+    "perhekoti_kuva_link": "https://www.fonecta.fi/_next/image?url=https%3A%2F%2Fd42y9z8h631ib.cloudfront.net%2Fkuvat%2Fjpg%2Fadapt-300-600-16-9%2F238965.jpg&w=640&q=75",
+    "vapaat_paikat": 6,
+    "kaikki_paikat": 8,
+    "henkilot": [
+      {
+        "henkilo_id": 7,
+        "henkilo1_varattu": {
+          "alkupvm": "2023-07-15",
+          "loppupvm": "2024-09-15"
+        }
+      },
+      {
+        "henkilo_id": 8,
+        "henkilo1_varattu": {
+          "alkupvm": "2023-07-20",
+          "loppupvm": "2024-09-20"
+        }
+      }
+    ],
+    "yleisselitys": "Perhekoti Fanni on Vesannossa sijaitseva koti, jossa ei ole esteettömyyttä tai kotisairaanhoitoa. Kodissa on eläimiä, mutta ei lapsia."
+  },
+
+  {
+    "Id": 7,
+    "nimi": "Perhekoti Kukka",
+    "sijainti": "Kuopio",
+    "osoite": "Kuopiontie 21",
+    "esteeton": true,
+    "elaimet": false,
+    "lapset": true,
+    "kotisairaanhoito": false,
+    "perhekoti_kuva_link": "https://50c9058674.clvaw-cdnwnd.com/07009bd324f2ce5d972e99b47a704bf0/200000028-48f0349ea7/20180809_190632-6.jpg?ph=50c9058674",
+    "vapaat_paikat": 7,
+    "kaikki_paikat": 10,
+    "henkilot": [
+      {
+        "henkilo_id": 9,
+        "henkilo1_varattu": {
+          "alkupvm": "2023-04-14",
+          "loppupvm": "2024-04-15"
+        }
+      },
+      {
+        "henkilo_id": 10,
+        "henkilo1_varattu": {
+          "alkupvm": "2023-07-22",
+          "loppupvm": "2024-09-01"
+        }
+      },
+      {
+        "henkilo_id": 11,
+        "henkilo1_varattu": {
+          "alkupvm": "2023-01-02",
+          "loppupvm": "2025-09-02"
+        }
+      }
+    ],
+    "yleisselitys": "Perhekoti Kukka on Kuopiossa sijaitseva esteetön perhekoti, jossa on lapsia, ei eläimiä. Kotisairaanhoitoa ei ole saatavilla."
+  }
+]

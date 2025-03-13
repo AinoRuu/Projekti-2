@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NurseProfile</title>
+    <link rel="stylesheet" href="../hoitajaprofiili/nursestyle.css">
+    <link rel="stylesheet" href="../etusivu/style.css">
+    <script src="../kirjautuminen/login.js"></script>
+    <script src="../etusivu/main.js"></script>
+
+</head>
+
+<body>
+    <!-- Ei-kirjautunut-modaali -->
+    <div id="loginModal" class="not_logged_modal">
+        <div class="modal-content">
+            <span class="close">&times;</span><br><br>
+            <p>Kirjaudu sisään käyttääksesi tätä ominaisuutta.</p>
+            <button onclick="window.location.href='../kirjautuminen/login.html'">Kirjaudu</button>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar">
+            <div class="logo">
+                <p>Linkkikotiin</p>
+            </div>
+            <ul>
+                <li> <a href="../etusivu/getStarted.html">Etusivu</a></li>
+                <li> <a href="../hakusivut/perhekotihaku.html">Perhekodit</a></li>
+                <li> <a href="../hakusivut/hoitajahaku.html">Hoitajat</a></li>
+                <li> <a href="../kalenteri/kalenteri.html">Kalenteri</a></li>
+                <!-- <li id="hoitajaProfiili"><a href="../hoitajaprofiili/nurse.html">Oma Profiili</a></li> poistetaan ???? HUOM id="hoitajaProfiili" -->
+                <button id="kirjaudu1"><a href="../kirjautuminen/login.html">Kirjaudu ulos</a></button>
+            </ul>
+        </nav>
+    </div>
+    <!-- a wrapper div around the main content and flexbox styles to ensure the footer stays at the bottom of the page -->
+    <div class="empty">
+        <br />
+    </div>
+
+    <div class="content-wrapper">
+        <div class="container">
+
+            <div class="profile-container">
+                <div class="profile-info">
+                    <h1>Hoitajan profiili</h1>
+
+                    <p>Nimi:</p>
+                    <p id="Nimi"></p>
+                    <br>
+
+                    <p>Sukupuoli:</p>
+                    <p id="sukupuoli">Sukupuoli:</p>
+                    <br>
+
+                    <label for="Ikä">Ikä:</label>
+                    <p id="ika"></p>
+                    <br>
+
+                    <p>Kuvaus:<span id="kuvaus"></span></p>
+                    <br>
+
+                    <p>Erityisosaaminen:
+                        <ul id="erityisosaaminen"></ul>
+                        </p>
+                    <br>
+                    <h1>Perhekoti</h1>
+                </div>
+                <div class="profile-info">
+                    <div><br></div>
+                    <p>Palvelukielet:
+                    <ul id="kielet"></ul>
+                    </p>
+                    <p>Yhteystiedot:
+                    <ul>
+                        <li id="email"></li>
+                        <li id="puhelin"></li>
+                    </ul>
+                    </p>
+                    
+                </div>
+
+                <div display="flex" flex-direction="column">
+                    <img id="Profiilikuva_url" src="" alt="Kuva hoitajasta" class="profile-image">
+                    <div>
+                        <button id="editButton"
+                            onclick="window.location.href='../hoitajaprofiili/editNurseProfile.html'">Muokkaa
+                            profiilia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="family-profile-container">
+                <div class="profile-info">
+                    <p>Nimi:</p>
+                    <p id="nimi"></p>
+                    <br>
+
+                    <p>Sijainti:</p>
+                    <p id="sijainti"></p>
+                    <br>
+
+                    <p>Osoite:</p>
+                    <p id="osoite"></p>
+                    <br>
+
+                    <p>Esteetön:</p>
+                    <p id="esteeton"></p>
+                    <br>
+
+                    <p>Eläimet:</p>
+                    <p id="elaimet"></p>
+                    <br>
+
+                    <p>Lapset:</p>
+                    <p id="lapset"></p>
+                    <br>
+
+                    <p>Kotisairaanhoito:</p>
+                    <p id="kotisairaanhoito"></p>
+                    <br>
+
+
+                </div>
+                <div class="profile-info">
+                    <p>Yleisselitys:</p>
+                    <p id="yleisselitys"></p>
+                    <br>
+
+                    <p>Vapaat paikat:</p>
+                    <p id="vapaat_paikat"></p>
+                    <br>
+
+                    <p>Kaikki paikat:</p>
+                    <p id="kaikki_paikat"></p>
+<br>
+
+                    <p>Henkilöt:</p>
+                    <ul id="henkilot"></ul>
+                    <br>
+                </div>
+                <div display="flex" flex-direction="column">
+                    <img id="perhekoti_kuva" src="" alt="Kuva perhekodista" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="family-profile-container">
+                <div>
+                    <h3>Varaukset</h3>
+                    <div id="varaukset-lista"></div>
+                    <button type="button" id="lisaaVaraus">+ Lisää uusi varaus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>Linkkikotiin.fi</footer>
+    <script src="../hoitajaprofiili/nurse.js"></script>
+</body>
+
+</html>

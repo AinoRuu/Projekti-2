@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>editProfilePage</title>
+  <link rel="stylesheet" href="../hoitajaprofiili/nursestyle.css" />
+  <link rel="stylesheet" href="../etusivu/style.css">
+  <script src="../kirjautuminen/login.js"></script>
+  <script src="../etusivu/main.js"></script>
+
+</head>
+
+<body>
+  <!-- Ei-kirjautunut-modaali -->
+  <div id="loginModal" class="not_logged_modal">
+    <div class="modal-content">
+      <span class="close">&times;</span><br><br>
+      <p>Kirjaudu sisään käyttääksesi tätä ominaisuutta.</p>
+      <button onclick="window.location.href='../kirjautuminen/login.html'">Kirjaudu</button>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="logo">
+      <p>Linkkikotiin</p>
+    </div>
+    <ul>
+      <li> <a href="../etusivu/getStarted.html">Etusivu</a></li>
+      <li> <a href="../hakusivut/perhekotihaku.html">Perhekodit</a></li>
+      <li> <a href="../hakusivut/hoitajahaku.html">Hoitajat</a></li>
+      <li> <a href="../kalenteri/kalenteri.html">Kalenteri</a></li>
+      <!-- <li id="hoitajaProfiili"><a href="../hoitajaprofiili/nurse.html">Oma Profiili</a></li> poistetaan ???? HUOM id="hoitajaProfiili" -->
+      <button id="kirjaudu1"><a href="../kirjautuminen/login.html">Kirjaudu ulos</a></button>
+    </ul>
+  </nav>
+
+  <div class="empty">
+    <br />
+  </div>
+  <!-- a wrapper div around the main content and flexbox styles to ensure the footer stays at the bottom of the page -->
+  <div class="content-wrapper">
+    <div class="container">
+      <div class="profile-container">
+        <div class="profile-info">
+          <h1>Hoitajan profiili</h1>
+          <form id="editForm">
+
+            <label for="Nimi">Nimi:</label>
+            <input id="Nimi" required /><br />
+
+            <label for="Sukupuoli">Sukupuoli:</label>
+            <input id="sukupuoli" required /><br />
+
+            <label for="Ikä">Ikä:</label>
+            <input id="ika" type="number" required /><br />
+
+            <label for="Kuvaus">Kuvaus:</label>
+            <input id="kuvaus" required /><br />
+
+            <label for="Kielet">Palvelukielet (pilkuilla erotettuna):</label>
+            <input id="kielet" required /><br />
+
+            <label for="Erityisosaaminen">Erityisosaaminen (pilkuilla erotettuna):</label>
+            <input id="erityisosaaminen" /><br />
+
+            <label>Yhteystiedot:</label><br />
+
+            <label for="Email">Email (muokkaus ylläpidon kautta):</label>
+            <input id="email" type="email" disabled /><br />
+
+            <label for="Puhelinnro">Puhelinnumero:</label> 
+            <input id="puhelin" type="tel" required /><br />
+
+            <!--<h3>Varaukset</h3>
+            <div id="varaukset-lista"></div>
+            <button type="button" id="lisaaVaraus">+ Lisää uusi varaus</button>
+            <br /><br /> -->
+            <label for="profiilikuvanUrl">Profiilikuvan URL:</label>
+            <input id="profiilikuvanUrl" type="text" />
+            <button type="button" id="poistaKuva">Poista kuva</button> <br />
+            <button type="submit" class="button">Tallenna</button>
+            <button type="button" id="cancelButton"
+              onclick="window.location.href='../hoitajaprofiili/nurse.html'">Peruuta</button>
+
+          </form>
+        </div>
+        <div display="flex" flex-direction="column">
+          <img id="profiilikuva" src="" alt="Profiilikuva" class="profile-image" />
+
+          <div>
+            <button type="button" id="deleteProfile">Poista profiili</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-wrapper">
+    <div class="container">
+        <div class="family-profile-container">
+            <div class="profile-info">
+              <form id="editForm">
+                <label for="nimi">Nimi:</label>
+                <input id="nimi" required /><br />
+
+                <label for="sijainti">Sijainti:</label>
+                <input id="sijainti" required /><br />
+
+                <label for="osoite">Osoite:</label>
+                <input id="osoite" required /><br />
+
+                <label for="esteeton">Esteetön:</label>
+                <input id="esteeton" required /><br />
+
+                <label for="elaimet">Eläimet::</label>
+                <input id="elaimet" required /><br />
+
+                <label for="lapset">Lapset:</label>
+                <input id="lapset" required /><br />
+
+                <label for="kotisairaanhoito">Kotisairaanhoito:</label>
+                <input id="kotisairaanhoito" required /><br />
+
+
+
+            </div>
+            <div class="profile-info">
+              <label for="yleisselitys">Yleisselitys:</label>
+              <input id="yleisselitys" required /><br />
+
+              <label for="vapaat_paikat">Vapaat paikat:</label>
+              <input id="vapaat_paikat" required /><br />
+
+              <label for="kaikki_paikat">Kaikki paikat:</label>
+              <input id="kaikki_paikat" required /><br />
+
+              <label for="perhekoti_kuvaURL">Perhekotikuvan URL:</label>
+              <input id="perhekoti_kuvaURL" type="text" />
+
+              <button type="button" id="poistaPerhekotiKuva">Poista perhekodin kuva</button> <br />
+              <button type="submit" class="button">Tallenna</button>
+              <button type="button" id="cancelButton"
+                onclick="window.location.href='../hoitajaprofiili/nurse.html'">Peruuta</button>
+
+            <!--<label for="henkilot">Henkilöt (pilkuilla erotettuina):</label>
+                <input id="henkilot" required /><br />-->
+            </div>
+            <div display="flex" flex-direction="column">
+                <img id="perhekoti_kuva" src="" alt="Kuva perhekodista" class="profile-image">
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+  <footer>Linkkikotiin.fi</footer>
+
+  <script src="../hoitajaprofiili/editNurseProfile.js">
+
+  </script>
+</body>
+
+</html>

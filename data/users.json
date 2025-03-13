@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "Id": 1,
+      "Username": "Anna",
+      "Email": "anna.annanen@gmail.com",
+      "Password": "hoitaja",
+      "Role": 1
+    },
+    {
+      "Id": 2,
+      "Username": "mikko",
+      "Email": "mikko.mehilainen@gmail.com",
+      "Password": "hoitaja",
+      "Role": 1
+    },
+    {
+      "Id": 3,
+      "Username": "leena",
+      "Email": "leena.lempea@gmail.com",
+      "Password": "hoitaja",
+      "Role": 1
+    },
+    {
+      "Id": 4,
+      "Username": "jari",
+      "Email": "jari.jarkeva@gmail.com",
+      "Password": "hoitaja",
+      "Role": 1
+    },
+    {
+      "Id": 5,
+      "Username": "sari",
+      "Email": "sari.sairanen@hotmail.com",
+      "Password": "hoitaja",
+      "Role": 1
+    },
+    {
+      "Id": 6,
+      "Username": "HVA",
+      "Email": "hyvinvointialue@hva.fi",
+      "Password": "hva",
+      "Role": 2
+    },
+    {
+      "Id": 7,
+      "Username": "admin",
+      "Password": "admin",
+      "Email": "admin@huoltotoimenpiteet.com",
+      "Role": 3
+    }
+  ]
+}

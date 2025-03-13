@@ -1,0 +1,184 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    background-color: #5a9274;
+    position: relative;
+  }
+  
+  .container {
+    position: relative; /*saa itemin menemään rectanglen päälle*/
+    display: contents;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  /*input välit login*/
+  .container>div {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #5a9274;
+  }
+  
+  /*input välit register*/
+  .container2>div {
+    background-color: #f4f4f4;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #5a9274;
+  }
+  
+  .profile-container {
+    position: relative; /*saa itemin menemään rectanglen päälle*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  /*Käyttäjän profiilikuva register*/
+.pfp2 {
+  background-color: #82ad93;
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  transform: translateY(-70%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+  /*alla oleva neliö rekisteröitymissivulla*/
+  .rectangle2 {
+    width: 630px;
+    height: auto;
+    background-color: #82ad93;
+    /*#a8d5ba;*/
+    position: relative;
+    top: 50%; /*laittaa alemmas*/
+    border-radius: 60px;
+    padding: 20px;
+    transform: translateY(10%);
+    border-radius: 60px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: -100px; /* Labelien ja inputtien siirtäminen ylemmäs tai alemmas*/
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .input-container label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .input-container input, .input-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #537768;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .error-message {
+    color: #fffb2a;
+    font-size: 20px;
+    border: 5px;
+    border-color: black;
+  }
+  
+  #loginBtn, #registerBtn {
+    background-color: #224640;
+    color: #fff;
+    border-radius: 18px;
+    width: 80%;
+    height: 42px;
+    font-size: 20px;
+    border: 2px;
+    margin: 10px auto;
+    position: relative; /*saa itemin menemään rectanglen päälle*/
+  }
+  
+  ::placeholder {
+    color: white;
+    opacity: 0.7;
+  }
+
+  footer {
+    margin-top: 5%;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+      .container, .container2 {
+          display: block;
+          padding: 20px;
+      }
+  
+      .profile-container {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .rectangle, .rectangle2 {
+          width: 90%;
+          height: auto;
+      }
+  
+      .pfp, .pfp2 {
+          width: 100px;
+          height: 100px;
+      }
+  
+      input, textarea {
+          width: 100%;
+      }
+  
+      button {
+          width: 100%;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .container, .container2 {
+          padding: 10px;
+      }
+  
+      .rectangle, .rectangle2 {
+          width: 100%;
+      }
+  
+      .pfp, .pfp2 {
+          width: 80px;
+          height: 80px;
+      }
+  
+      input, textarea {
+          font-size: 14px;
+      }
+  
+      button {
+          font-size: 16px;
+      }
+  }

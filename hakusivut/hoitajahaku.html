@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoitajahaku</title>
+    <!--Yhteiset tyylimäärittelyt-->
+    <link rel="stylesheet" href="../etusivu/style.css">
+    <script src="../etusivu/main.js"></script>
+    <script src="../kirjautuminen/login.js"></script>
+    <!--Hakusivujen tyylimäärittelyjä-->
+    <style>
+        .info {
+            margin: 70px 20px 10px 20px;
+            padding: 10px;
+        }
+
+        .search {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .filter {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        .filter-menu {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .data {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .hoitaja {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hoitaja img {
+            width: 225px;
+            height: 225px;
+            border-radius: 10px;
+            background-color: #d3d3d3;
+            object-fit: cover;
+        }
+
+        .hoitaja h3 {
+            margin: 10px 0 5px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .hoitaja p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* a wrapper div around the main content and flexbox styles to ensure the footer stays at the bottom of the page */
+        .content-wrapper {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #5c9475;
+            padding: 40px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            padding-bottom: 80px;
+            margin-top: auto;
+            width: 100%;
+        }
+    </style>
+    <!--JavaScript-->
+    <script src="hoitajahaku.js"></script>
+</head>
+
+<body onload="loadHoitajat()">
+
+    <!-- Ei-kirjautunut-modaali -->
+    <div id="loginModal" class="not_logged_modal">
+        <div class="modal-content">
+            <span class="close">&times;</span><br><br>
+            <p>Kirjaudu sisään käyttääksesi tätä ominaisuutta.</p>
+            <button onclick="window.location.href='../kirjautuminen/login.html'">Kirjaudu</button>
+        </div>
+    </div>
+    <!--Navigation bar-->
+    <nav>
+        <div class="logo">
+            <p>Linkkikotiin</p>
+        </div>
+        <ul>
+            <li> <a href="../etusivu/getStarted.html">Etusivu</a></li>
+            <li> <a href="../hakusivut/perhekotihaku.html">Perhekodit</a></li>
+            <li> <a href="../hakusivut/hoitajahaku.html">Hoitajat</a></li>
+            <li> <a href="../kalenteri/kalenteri.html">Kalenteri</a></li>
+            <button id="kirjaudu1"><a href="../kirjautuminen/login.html">Kirjaudu</a></button>
+            <!--Tämä muutttuu "Kirjaudu ulos (username) kirjautuneille"-->
+        </ul>
+    </nav>
+
+    <div class="empty">
+        <br />
+    </div>
+
+    <!--Content-->
+    <div class="content-wrapper"> <!-- a wrapper div around the main content and flexbox styles to ensure the footer stays at the bottom of the page -->
+        <div class="info">
+            <h2>Hoitajat</h2>
+            <p>Tällä sivulla voit vapaasti selata hoitajia tai hakea niitä erilaisin kriteerein ja suodattimin</p>
+        </div>
+
+        <div class="search">
+            <h4>Haku</h4>
+            <button class="filter" onclick="toggleFilterMenu()">Suodattimet</button>
+            <input class="filter" type="text" placeholder="Hae hoitajaa">
+            <button class="filter" onclick="filterHoitajat()">Hae</button>
+
+            <div class="filter-menu" id="filterMenu">
+                <label><input type="checkbox" id="sukupuoliNainen"> Nainen</label><br>
+                <label><input type="checkbox" id="sukupuoliMies"> Mies</label><br>
+                <label><input type="checkbox" id="kieliSuomi"> Suomi</label><br>
+                <label><input type="checkbox" id="kieliEnglanti"> Englanti</label><br>
+                <label><input type="checkbox" id="kieliRuotsi"> Ruotsi</label><br>
+                <label><input type="checkbox" id="kieliRanska"> Ranska</label><br>
+                <label><input type="checkbox" id="kieliSaksa"> Saksa</label>
+            </div>
+
+            <div class="data" id="dataContainer">
+                <!-- Perhekotien tiedot tulevat tänne -->
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>Linkkikotiin.fi</footer>
+</body>
+
+</html>
+<!--
+
+-->

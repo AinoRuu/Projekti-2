@@ -1,0 +1,146 @@
+{
+  "hoitajat": [
+    {
+      "Id": 1,
+      "Nimi": "Anna Hoitaja",
+      "Sukupuoli": "Nainen",
+      "Ikä": 30,
+      "Email": "anna.annanen@gmail.com",
+      "Puhelinnro": "+358401234567",
+      "Kuvaus": "Vastuullinen ja kokenut hoitaja, jolla on yli viiden vuoden kokemus alalta.",
+      "Kielet": [
+        "Suomi",
+        "Englanti"
+      ],
+      "Erityisosaaminen": [
+        "Geriatria",
+        "Akuuttihoito",
+        "Kotihoito",
+        "Ensiapu"
+      ],
+      "Profiilikuva_url": "https://media.istockphoto.com/id/1467477321/vector/nurse-avatar-clipart-icon-vector-illustration-medical-service.jpg?s=612x612&w=0&k=20&c=K9MD045OR7YUefUF7ABPOyRsCBSW8Oh8417Jgxd1vEM=",
+      "Varaukset": [
+        {
+          "aloitus_pvm": "2025-02-10",
+          "aloitus_aika": "08:00",
+          "lopetus_pvm": "2025-02-12",
+          "lopetus_aika": "16:00",
+          "toistuvuus": false
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Nimi": "Mikko Mehiläinen",
+      "Sukupuoli": "Mies",
+      "Ikä": 45,
+      "Email": "mikko.mehilainen@gmail.com",
+      "Puhelinnro": "+358401112233",
+      "Kuvaus": "Pitkän linjan sairaanhoitaja, joka on työskennellyt sairaalassa ja ensihoidossa yli 15 vuotta.",
+      "Kielet": [
+        "Suomi",
+        "Ruotsi",
+        "Englanti"
+      ],
+      "Erityisosaaminen": [
+        "Ensihoito",
+        "Leikkaushoito",
+        "Traumatologia"
+      ],
+      "Profiilikuva_url": "https://cdn3.iconfinder.com/data/icons/profession-avatars/64/_Nurse-512.png",
+      "Varaukset": [
+        {
+          "aloitus_pvm": "2025-02-15",
+          "aloitus_aika": "10:00",
+          "lopetus_pvm": "2025-02-15",
+          "lopetus_aika": "18:00",
+          "toistuvuus": false
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Nimi": "Leena Lempeä",
+      "Sukupuoli": "Nainen",
+      "Ikä": 38,
+      "Email": "leena.lempea@gmail.com",
+      "Puhelinnro": "+358405556677",
+      "Kuvaus": "Lämminhenkinen hoitaja, jolla on laaja kokemus lasten ja nuorten hoidosta sekä psykiatrisesta hoitotyöstä.",
+      "Kielet": [
+        "Suomi",
+        "Englanti",
+        "Ranska"
+      ],
+      "Erityisosaaminen": [
+        "Lastenhoito",
+        "Psykiatria",
+        "Neurologia"
+      ],
+      "Profiilikuva_url": "https://thumbs.dreamstime.com/b/nurse-profile-icon-circle-shape-flat-style-vector-eps-147647184.jpg",
+      "Varaukset": [
+        {
+          "aloitus_pvm": "2025-02-20",
+          "aloitus_aika": "07:30",
+          "lopetus_pvm": "2025-02-22",
+          "lopetus_aika": "15:30",
+          "toistuvuus": false
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Nimi": "Jari Järkevä",
+      "Sukupuoli": "Mies",
+      "Ikä": 50,
+      "Email": "jari.jarkeva@gmail.com",
+      "Puhelinnro": "+358447675899",
+      "Kuvaus": "Kokenut erikoissairaanhoitaja, joka on työskennellyt teho-osastolla ja pitkäaikaishoidossa.",
+      "Kielet": [
+        "Suomi",
+        "Englanti",
+        "Saksa"
+      ],
+      "Erityisosaaminen": [
+        "Tehohoito",
+        "Sisätaudit",
+        "Palliatiivinen hoito"
+      ],
+      "Profiilikuva_url": "https://c8.alamy.com/comp/2C1TTND/doctor-avatar-character-standing-in-the-circle-flat-style-design-vector-illustration-2C1TTND.jpg",
+      "Varaukset": [
+        {
+          "aloitus_pvm": "2025-02-18",
+          "aloitus_aika": "12:00",
+          "lopetus_pvm": "2025-02-18",
+          "lopetus_aika": "20:00",
+          "toistuvuus": false
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "Nimi": "Sari Sairanen",
+      "Sukupuoli": "Nainen",
+      "Ikä": 30,
+      "Email": "sari.sairanen@hotmail.com",
+      "Puhelinnro": "+358421214177",
+      "Kuvaus": "Kokenut perhehoitaja, jolla on erityisosaamista kotihoidosta.",
+      "Kielet": [
+        "Suomi",
+        "Englanti"
+      ],
+      "Erityisosaaminen": [
+        "Kotihoito"
+      ],
+      "Profiilikuva_url": "https://cdn3.iconfinder.com/data/icons/profession-avatars/64/_Nurse-512.png",
+      "Varaukset": [
+        {
+          "aloitus_pvm": "2025-02-25",
+          "aloitus_aika": "08:00",
+          "lopetus_pvm": "2025-02-28",
+          "lopetus_aika": "16:00",
+          "toistuvuus": false
+        }
+      ]
+    }
+  ]
+}

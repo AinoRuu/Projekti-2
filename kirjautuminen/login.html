@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome back</title>
+    <link rel="stylesheet" href="./logstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-container">
+            <div class="rectangle"></div>
+            <img class="pfp" src="https://img.icons8.com/?size=100&id=uOoIUTYvxnso&format=png&color=FFFFFF" alt="HVA henkilökunta">
+        </div>
+        <br><br><br><br>
+        <div class="input-container">
+            <i class="icon-user"><img src="https://img.icons8.com/?size=100&id=84020&format=png&color=FFFFFF"></i>
+            <input type="text" id="username" placeholder="Käyttäjänimi tai Sähköposti">
+        </div>
+        <div class="input-container">
+            <i class="icon-lock"><img src="https://img.icons8.com/?size=100&id=2862&format=png&color=FFFFFF"></i>
+            <input type="password" id="password" placeholder="Salasana">
+        </div>
+        <div class="flex-container">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Muista minut</label>
+            <p><a href="">Unohditko salasanasi?</a></p>
+        </div>
+        <p style="color: #fffb2a; font-size: 20px; border: 5px; border-color: black;" id="error-message"></p>
+        <button type="button" id="loginBtn">Kirjaudu</button>
+    </div>
+    <footer>
+        <br><br>
+        <p>Kirjautumalla hyväksyt<a href=""> Käyttöehdot</a> ja <a href="">Tietosuojakäytännöt</a></p>
+        <p>Eikö sinulla ole tiliä?<a href="../kirjautuminen/register.html"> Rekisteröidy</a></p>
+    </footer>
+
+    <script src="./login.js"></script>
+
+    
+</body>
+
+
+
+</html>

@@ -1,0 +1,262 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  background-color: #5a9274;
+  position: relative;
+}
+
+.container {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  display: contents;
+  gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+/*input välit login*/
+.container>div {
+  background-color: #f4f4f4;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #5a9274;
+}
+
+/*input välit register*/
+.container2>div {
+  background-color: #f4f4f4;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #5a9274;
+}
+
+.profile-container {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/*alla oleva neliö kirjautumissivulla*/
+.rectangle {
+  width: 530px;
+  height: 500px;
+  background-color: #82ad93;
+  /*#a8d5ba;*/
+  position: absolute;
+  top: 50%; /*laittaa alemmas*/
+  transform: translateY(20%);
+  border-radius: 60px;
+}
+
+/*alla oleva neliö rekisteröitymissivulla*/
+.rectangle2 {
+  width: 630px;
+  height: 1050px;
+  background-color: #82ad93;
+  /*#a8d5ba;*/
+  position: absolute;
+  top: 50%; /*laittaa alemmas*/
+  transform: translateY(20%);
+  border-radius: 60px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.input-container i {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  color: white;
+  background-color: #224640;
+  margin: 0px 0px 0px 0px;
+}
+
+/*Syöttökentät*/
+
+input {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  padding: 10px;
+  font-size: 20px;
+  width: 300px;
+  background-color: #537768;
+  color: white;
+  border: 0px #5a9274;
+}
+
+a {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  color: #224640;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 16px;
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+}
+
+#loginBtn, #registerBtn {
+  background-color: #224640;
+  color: #fff;
+  border-radius: 18px;
+  width: 5%;
+  height: 42px;
+  font-size: 20px;
+  border: 2px;
+  margin: 10px;
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+}
+
+label {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  font-size: 16px;
+  color: white;
+}
+
+::placeholder {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  color: white;
+  padding: 30px 20px;
+}
+
+/*checkbox*/
+input[type="checkbox"] {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid #224640;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  background-color: #224640;
+  border: 2px solid #224640;
+}
+
+input[type="checkbox"]:checked::before {
+  position: relative;
+  content: '✔';
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Muista minut ja Unohditko salasanasi?*/
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container p {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  margin: 0;
+  margin-left: 80px; /*Muista minut Unohditko salasanasi? väli*/
+}
+
+/*Käyttäjän profiilikuva login*/
+.pfp {
+  background-color: #82ad93;
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  transform: translateY(50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Iconit*/
+.icon-user img {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  background-color: #224640;
+  width: 40px;
+  height: 36px;
+}
+
+.icon-lock img {
+  position: relative; /*saa itemin menemään rectanglen päälle*/
+  background-color: #224640;
+  width: 40px;
+  height: 36px;
+}
+
+footer {
+  margin-top: 2%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container, .container2 {
+        display: block;
+        padding: 20px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rectangle, .rectangle2 {
+        width: 90%;
+        height: auto;
+    }
+
+    .pfp, .pfp2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .container2 {
+        padding: 10px;
+    }
+
+    .rectangle, .rectangle2 {
+        width: 100%;
+    }
+
+    .pfp, .pfp2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,109 @@
+.container {
+  padding: 20px;
+}
+
+.profile-container {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px; 
+}
+
+.container h1 {
+  color: #2a4a45;
+}
+
+
+.profile-info {
+  flex: 1;
+  line-height: 1.5;
+  font-size: medium;
+}
+
+
+.profile-image {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  align-self: right;
+}
+
+button {
+  color: white;
+  background-color: #5c9475;
+  border-radius: 20px;
+  border: 2px solid white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.varaus {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: medium;
+  border-radius: 10px;
+  border: #2a4a45 1px solid;
+}
+
+.varaus label {
+  width: 150px;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #4a7b60;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.profile-info li {
+  font-size: 15px;
+}
+
+.profile-info p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  display: inline;
+
+}
+
+.family-profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px; 
+  box-shadow: #2a4a45 0px 0px 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.family-profile-container p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  display: inline;
+}
+input {
+  box-sizing: border-box; 
+  padding: 5px; 
+  margin-bottom: 10px; 
+  
+}
